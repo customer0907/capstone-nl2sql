@@ -15,8 +15,19 @@
   - GPU : NVIDIA RTX A6000
   - RAM : 128GB
 3. SW
-  - python 3.8.10
-  - pytorch 2.2.2
-  - cuda 12.1
+  - Python 3.8.10
+  - PyTorch 2.2.2
+  - CUDA Toolkit 12.1
+  - Django 5.0.6
 
+## 데이터셋
+- AIHUB 자연어 기반 질의(NL2SQL) 검색 생성 데이터
+
+## 데이터 파이프라인
 <img width="1072" alt="image" src="https://github.com/user-attachments/assets/6262b18d-91c5-408e-bbdd-9d75df414f19" />
+
+## 최종 결과
+<img width="331" alt="image" src="https://github.com/user-attachments/assets/c4456518-55b7-4a33-a2ef-349a05925bc8" />
+
+## Demo
+<img width="1702" alt="웹_Demo" src="https://github.com/user-attachments/assets/d8ac6a96-10e5-4cd9-95d0-6c62bbbb4e59" />
