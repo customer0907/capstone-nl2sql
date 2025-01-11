@@ -27,7 +27,12 @@
 <img width="1072" alt="image" src="https://github.com/user-attachments/assets/6262b18d-91c5-408e-bbdd-9d75df414f19" />
 
 ## 최종 결과
-<img width="331" alt="image" src="https://github.com/user-attachments/assets/c4456518-55b7-4a33-a2ef-349a05925bc8" />
+- sql query 난이도 별 성능 
+
+| Hardness   | Easy | Medium | Hard | Extra Hard | All  |
+|------------|------|--------|------|------------|------|
+| 개선 전       | 90.5 | 84.8   | 81.3 | 17.5       | 80.8 |
+| 개선 후       | 91.8 | 86.1   | 84.2 | 18.6       | 82.5 |
 
 ## Demo
 <img width="1702" alt="웹_Demo" src="https://github.com/user-attachments/assets/d8ac6a96-10e5-4cd9-95d0-6c62bbbb4e59" />
