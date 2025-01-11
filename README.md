@@ -21,7 +21,7 @@
   - Django 5.0.6
 
 ## 데이터셋
-- AIHUB 자연어 기반 질의(NL2SQL) 검색 생성 데이터
+- AIHUB 자연어 기반 질의(NL2SQL) 검색 생성 데이터
 
 ## 데이터 파이프라인
 <img width="1072" alt="image" src="https://github.com/user-attachments/assets/6262b18d-91c5-408e-bbdd-9d75df414f19" />
