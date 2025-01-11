@@ -1,5 +1,6 @@
 # 서울시 공공데이터를 대상으로 한 도메인 특화 Text2SQL 모델 개발
 - 2024-1 졸업 프로젝트(정보통신 종합설계)
+<img width="1702" alt="웹_Demo" src="https://github.com/user-attachments/assets/d8ac6a96-10e5-4cd9-95d0-6c62bbbb4e59" />
 
 ## 프로젝트 소개
 - (주)카카오의 Text2SQL 오픈소스 모델인 RYANSQL의 성능 지표를 개선하고,
@@ -34,5 +35,3 @@
 | 개선 전       | 90.5 | 84.8   | 81.3 | 17.5       | 80.8 |
 | 개선 후       | 91.8 | 86.1   | 84.2 | 18.6       | 82.5 |
 
-## Demo
-<img width="1702" alt="웹_Demo" src="https://github.com/user-attachments/assets/d8ac6a96-10e5-4cd9-95d0-6c62bbbb4e59" />
