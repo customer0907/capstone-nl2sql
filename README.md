@@ -74,7 +74,6 @@ flowchart LR
 | '주소'·'이름' 컬럼 혼동 (예: `DUTYADDR` ↔ `DUTYNAME`) | 영문 기반 모델 구조의 한국어 모호성, 1·2순위 컬럼 확률 근접 | 확률 차 15% 이내면 KoELECTRA 임베딩 코사인 유사도로 컬럼 재선택 | '주소' 질의 mismatch 90건(4.1%) → 32건(1.4%) |
 | `tables.json` 수정 후에도 스키마 캐시 미갱신 | pkl 생성 조건문이 최초 1회만 동작 | 조건 반전으로 기존 pkl이 있으면 재생성 (임시 조치) | 스키마 수정 시 pkl 재생성 |
 
-<!-- TODO(사용자 확인): pkl 조건 반전 후 pkl이 없는 최초 실행은 로드 분기로 빠짐 — 실행 확인 필요 -->
 
 ## 7. 성과
 - 정량 (팀 결과, 지표: EM with value, 난이도 구분: Spider 기준)
@@ -88,7 +87,6 @@ flowchart LR
 - 한국어 컬럼 혼동: '주소' 포함 질의 2,175건 중 mismatch 90건(4.1%) → 32건(1.4%)
 - 학습: 34 epoch에서 early stopping, 손실 Train 15.71 → 1.13 / Valid 17.13 → 2.78
 
-<!-- TODO(사용자 확인): '개선 전' 수치의 측정 조건(EM with value 기준인지), 평가 세트(valid/test) -->
 
 <img width="480" alt="학습·검증 손실 그래프" src="docs/images/loss_graph.png" />
 
@@ -109,7 +107,6 @@ PYTHONPATH=src/models:src/training:src/utils:data python src/training/main_ko.py
 ```
 - 2024.06 시점 실험 코드 스냅샷 — Spider 공식 평가 스크립트(`eval_final/`), 데이터, 체크포인트, Django 웹 코드 미포함, 재현 실행 미확인
 
-<!-- TODO(사용자 확인): requirements.txt(torch 1.8.0·transformers 3.3.1)와 학습 환경(PyTorch 2.2.2) 버전 불일치 -->
 
 ## 9. 디렉터리 구조
 ```
@@ -138,4 +135,3 @@ capstone-nl2sql/
 - 기반 모델: RYANSQL (카카오, *Computational Linguistics* 47(2), 2021) — AIHub NL2SQL 데이터와 함께 제공된 한국어 모델 소스코드를 수정
 - 기존 README: [docs/ORIGINAL_README.md](docs/ORIGINAL_README.md)
 
-<!-- TODO(사용자 확인): 기반 소스코드의 배포처·라이선스 표기 -->
