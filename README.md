@@ -24,7 +24,7 @@
 - 컬럼 혼동 보정 — 1·2순위 컬럼 확률이 가까우면 KoELECTRA 임베딩 코사인 유사도로 재선택 — `src/utils/utils_ko.py`
 - 학습·검증 루프, early stopping(patience 5), 손실 그래프 저장 — `src/training/main_ko.py`
 - 예측 → SQL 복원, 난이도별(Easy/Medium/Hard/Extra Hard) 평가 — `src/utils/utils_ko.py`, `scripts/evaluate.sh`
-- 자연어 질의 → SQL → MySQL 조회 웹(Django) — 웹 코드는 레포 미포함
+- 자연어 질의 → SQL → MySQL 조회 웹(Django, 본인 구현) — 웹 코드는 레포 미포함
 
 <!-- 데모 이미지: docs/images/ (가로 720px 이하) -->
 | 데모: 예측 SQL 비교 (1행 값 삽입 성공, 2행 '주소'·'이름' 컬럼 혼동 사례) |
@@ -65,8 +65,7 @@ flowchart LR
 - 모델 구조·하이퍼파라미터 실험 (2024.06.03): TableClause 은닉층(Dense) 1개 추가 → 최종 설정 Table Clause 5층·Gen Clause 7층. GELU 활성화·은닉층 추가 증설은 성능 저하로 미채택 → Tanh, batch 32, lr 1e-6, dropout 0.1
 - 학습 파이프라인 정비 (2024.05.23~05.30): GPU/CPU 자동 선택, 인코더 출력 device 정렬(`out.to(x.device)`), 학습·검증 손실 그래프 저장, `tables.json` 수정 시 pkl 캐시 재생성
 - 레포 정리: 코드 업로드(18파일, 5,741줄), README·LICENSE 작성 — 커밋 13개 전부 본인
-
-<!-- TODO(사용자 확인): Django 웹 구현을 본인이 했는지. 역할 분담표에는 '모델 활용 API 개발'까지만 기재 -->
+- 웹 데모: 질문 → SQL → MySQL 조회 Django 웹 구현 (학습 시 SQLite 스키마를 MySQL로 이관)
 
 ## 6. 트러블슈팅
 | 문제 | 원인 | 해결 | 결과 |
